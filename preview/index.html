@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArbeitszeitApp – Web-Simulation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero card">
+        <div>
+          <div class="eyebrow">Lokale PC-Simulation</div>
+          <h1>ArbeitszeitApp</h1>
+          <p class="subtitle">Teste Arbeitsbeginn, Pausen, Fortsetzen, Tagesaldo, Historie, Woche und Monat direkt im Browser.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="loadDemoBtn" class="secondary">Beispieldaten laden</button>
+          <button id="resetBtn" class="ghost">Zurücksetzen</button>
+        </div>
+      </header>
+
+      <nav class="tabs card" aria-label="Ansichten">
+        <button class="tab active" data-tab="today">Heute</button>
+        <button class="tab" data-tab="history">Historie</button>
+        <button class="tab" data-tab="week">Woche</button>
+        <button class="tab" data-tab="month">Monat</button>
+        <button class="tab" data-tab="about">Info</button>
+      </nav>
+
+      <main>
+        <section id="todayView" class="view"></section>
+        <section id="historyView" class="view hidden"></section>
+        <section id="weekView" class="view hidden"></section>
+        <section id="monthView" class="view hidden"></section>
+        <section id="aboutView" class="view hidden">
+          <div class="card stack">
+            <h2>Was diese Vorschau kann</h2>
+            <ul class="bullets">
+              <li>Arbeitsbeginn / Pause / Fortsetzen / Arbeitsende</li>
+              <li>Automatische 30-Minuten-Pause ab mehr als 6 Stunden ununterbrochener Arbeit</li>
+              <li>Berechnung von Ist-Zeit, Sollzeit und Tagessaldo</li>
+              <li>Historie aller Tage mit manueller Korrektur</li>
+              <li>Wochen- und Monatsübersicht mit lokal speicherbaren Sollzeiten</li>
+            </ul>
+            <p class="muted">Die Daten werden nur im Browser über <code>localStorage</code> gespeichert. Ein Neuladen der Seite ist also okay; die Daten bleiben erhalten, bis du zurücksetzt.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="dayDialog" class="dialog">
+      <form method="dialog" id="dayForm" class="dialog-content">
+        <div class="dialog-head">
+          <div>
+            <div class="eyebrow">Historischen Tag bearbeiten</div>
+            <h3 id="dialogTitle">Tag bearbeiten</h3>
+          </div>
+          <button value="cancel" class="ghost">✕</button>
+        </div>
+
+        <label>
+          Datum
+          <input id="editDate" type="date" />
+        </label>
+
+        <label>
+          Wochen-Sollzeit für diese Woche (Minuten)
+          <input id="editWeekTarget" type="number" min="0" step="5" />
+        </label>
+
+        <label>
+          Kommentar zur Korrektur
+          <textarea id="editComment" rows="2" placeholder="z. B. Nachträglich korrigiert"></textarea>
+        </label>
+
+        <div class="row-between">
+          <h4>Arbeitsintervalle</h4>
+          <button type="button" id="addIntervalBtn" class="secondary">Intervall hinzufügen</button>
+        </div>
+        <div id="intervalEditor" class="stack"></div>
+
+        <label>
+          Arbeitsende / Tagesabschluss
+          <input id="editClosedAt" type="datetime-local" />
+        </label>
+
+        <div class="dialog-actions">
+          <button value="cancel" class="ghost">Abbrechen</button>
+          <button type="submit" class="primary">Speichern</button>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="intervalRowTemplate">
+      <div class="interval-row">
+        <label>
+          Start
+          <input data-field="start" type="datetime-local" />
+        </label>
+        <label>
+          Ende
+          <input data-field="end" type="datetime-local" />
+        </label>
+        <button type="button" class="ghost danger" data-action="remove">Entfernen</button>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
