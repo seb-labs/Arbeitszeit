@@ -6,7 +6,6 @@ Android-App zur lokalen Arbeitszeiterfassung mit Jetpack Compose.
 - Arbeitsbeginn, Pause, Fortsetzen, Arbeitsende
 - Tagesansicht mit Status, Bruttozeit, Nettozeit, automatischer Pause und Tagessaldo
 - Historie aller Tage mit Bearbeitung historischer Einträge
-- Erfasste Akten pro Tag und Kennzahl Akten pro Stunde
 - Wochenübersicht mit Brutto- und Netto-Balken pro Tag
 - Monatsübersicht mit Brutto- und Netto-Balken pro Tag
 - Push-Warnungen ab 9h und 10h Anwesenheit
