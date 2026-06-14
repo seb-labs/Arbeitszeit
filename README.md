@@ -51,4 +51,4 @@ Tests:
 - Der Arbeitsort wird im Tab **Arbeitsort** als Latitude/Longitude gespeichert und für den Geofence verwendet.
 - Nettoarbeitszeit: immer 5 Minuten Parkplatzweg werden abgezogen; ab mehr als 6 Stunden 30 Minuten Bruttozeit zusätzlich 30 Minuten Pause.
 - Manuelle Pausen entstehen aus den Lücken zwischen Arbeitsintervallen.
-- Die Zeitberechnung geht von einer 5-Tage-Woche für die anteilige Sollzeit aus.
+- Die Zeitberechnung zieht pauschal 5 Minuten Parkplatzweg ab und ab 6:30h Brutto zusätzlich 30 Minuten Pause.
