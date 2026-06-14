@@ -37,6 +37,11 @@ Tests:
 2. In den Android-Einstellungen die Installation aus unbekannten Quellen für den verwendeten Dateimanager erlauben.
 3. APK öffnen und installieren.
 
+## APK im Repo
+
+Eine installierbare Debug-APK liegt im Repo unter:
+`APK/ArbeitszeitApp-debug.apk`
+
 ## Nutzung
 
 - Auf **Heute** tippen, um Buchungen zu sehen und den aktuellen Status zu prüfen.
