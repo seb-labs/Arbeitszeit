@@ -35,9 +35,6 @@ Tests:
 Offizieller Release:
 - [v1.1](https://github.com/seb-labs/Arbeitszeit/releases/tag/v1.1)
 
-Die APK liegt derzeit zusätzlich noch im Repo, damit der Release-Workflow sie hochladen kann:
-`APK/ArbeitszeitApp-debug.apk`
-
 ## Installation
 
 1. APK vom GitHub Release herunterladen.
