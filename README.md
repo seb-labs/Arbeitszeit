@@ -31,16 +31,19 @@ Tests:
 ./gradlew testDebugUnitTest
 ```
 
+## Download
+Offizieller Release:
+- [v1.1](https://github.com/seb-labs/Arbeitszeit/releases/tag/v1.1)
+
+Die APK liegt derzeit zusätzlich noch im Repo, damit der Release-Workflow sie hochladen kann:
+`APK/ArbeitszeitApp-debug.apk`
+
 ## Installation
 
-1. APK auf das Android-Gerät kopieren.
-2. In den Android-Einstellungen die Installation aus unbekannten Quellen für den verwendeten Dateimanager erlauben.
-3. APK öffnen und installieren.
-
-## APK im Repo
-
-Eine installierbare Debug-APK liegt im Repo unter:
-`APK/ArbeitszeitApp-debug.apk`
+1. APK vom GitHub Release herunterladen.
+2. Auf das Android-Gerät kopieren oder direkt am Gerät öffnen.
+3. In den Android-Einstellungen die Installation aus unbekannten Quellen für den verwendeten Dateimanager erlauben.
+4. APK öffnen und installieren.
 
 ## Nutzung
 
