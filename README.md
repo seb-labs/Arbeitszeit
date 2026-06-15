@@ -57,3 +57,6 @@ Eine installierbare Debug-APK liegt im Repo unter:
 - Nettoarbeitszeit: immer 5 Minuten Parkplatzweg werden abgezogen; ab mehr als 6 Stunden 30 Minuten Bruttozeit zusätzlich 30 Minuten Pause.
 - Manuelle Pausen entstehen aus den Lücken zwischen Arbeitsintervallen.
 - Die Zeitberechnung zieht pauschal 5 Minuten Parkplatzweg ab und ab 6:30h Brutto zusätzlich 30 Minuten Pause.
+
+## Kontakt
+`Arbeitszeit@seblabs.unbox.at`
