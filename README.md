@@ -2,6 +2,23 @@
 
 Android-App zur lokalen Arbeitszeiterfassung mit Jetpack Compose.
 
+## Screenshots
+
+### App
+
+<p align="center">
+  <img src="docs/screenshots/arbeitszeit-heute.png" alt="Arbeitszeit Heute" width="240" />
+  <img src="docs/screenshots/arbeitszeit-manuelle-korrektur.png" alt="Arbeitszeit Manuelle Korrektur" width="240" />
+  <img src="docs/screenshots/arbeitszeit-woche.png" alt="Arbeitszeit Woche" width="240" />
+  <img src="docs/screenshots/arbeitszeit-arbeitsort.png" alt="Arbeitszeit Arbeitsort" width="240" />
+</p>
+
+### Benachrichtigung
+
+<p align="center">
+  <img src="docs/screenshots/arbeitszeit-notification.png" alt="Arbeitszeit Benachrichtigung" width="240" />
+</p>
+
 ## Funktionen
 - Arbeitsbeginn, Pause, Fortsetzen, Arbeitsende
 - Tagesansicht mit Status, Bruttozeit, Nettozeit, automatischer Pause und Tagessaldo
